@@ -1,4 +1,4 @@
-# 遗传算法 实数编码
+# 遗传算法 二进制编码
 import random
 import math
 #初始化总群
@@ -21,7 +21,7 @@ def init_pop(n,maxV, minV):
     return pop
 
 #交叉
-def crossover(self,par_1, par_2, rate=0.8):
+def crossover(par_1, par_2, rate=0.8):
     pop_cro = par_1
 
 
