@@ -61,3 +61,10 @@ def getBest(pop):
     # 最大值索引，求的是最大值为最佳
     idx = np.argmax(fit)
     return pop[idx]
+#得到总群适应度
+def getallfit(pop):
+    fitness = []
+    for i in range(len(pop)):
+        fit = getFitness(pop[i])
+        fitness.append(fit)
+    return fitness
